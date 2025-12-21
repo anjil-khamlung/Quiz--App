@@ -86,7 +86,10 @@ function loadQuestion() {
   startTimer();
 
   const q = questions[currentQuestion];
-  questionEl.innerText = q.question;
+  questionEl.innerHTML = `Q:${currentQuestion + 1} / ${
+    questions.length
+  }<br> ${q.question}`;
+
   optionsEl.innerHTML = "";
 
   q.options.forEach((option, index) => {

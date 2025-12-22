@@ -21,4 +21,4 @@ A simple Quiz-app built with HTML, CSS, and JavaScript.
 - HTML
   hhw
 - CSS
-- Javascript
+- Javascriptgit

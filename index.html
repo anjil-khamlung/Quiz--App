@@ -1,36 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Quiz App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="quiz-container">
+      <!-- Quiz Header -->
+      <h1>Quiz App</h1>
 
-<div class="quiz-container">
+      <!-- Timer -->
+      <div id="timer">Time: 10</div>
 
-    <!-- Quiz Header -->
-    <h1>Quiz App</h1>
+      <!-- Question -->
+      <h2 id="question">Question text</h2>
 
-    <!-- Timer -->
-    <div id="timer">Time: 10</div>
-
-    <!-- Question -->
-    <h2 id="question">Question text</h2>
-
-    <!-- Options -->
-    <ul id="options">
+      <!-- Options -->
+      <ul id="options">
         <!-- Options will be inserted by JS -->
-    </ul>
+      </ul>
 
-    <!-- Navigation Buttons -->
-    <div class="buttons">
+      <!-- Navigation Buttons -->
+      <div class="buttons">
         <button id="prev">Previous</button>
         <button id="next">Next</button>
+      </div>
     </div>
 
-</div>
-
-<script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>

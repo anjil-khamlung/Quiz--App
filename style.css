@@ -1,66 +1,60 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
 }
 
 body {
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: #f4f4f4;
-    
+  min-height: 100vh;
+  background: #f4f4f4;
 }
 
 .quiz-container {
-    width: 100%;
-    max-width: 450px;
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-   
+  width: 100%;
+  min-height: 100vh;
+  background: white;
+  padding: 20px;
 }
 
 h1 {
-    text-align: center;
-    text-decoration: underline;
-     text-underline-offset: 7px; 
+  text-align: center;
+  text-decoration: underline;
+  text-underline-offset: 7px;
 }
 
 #timer {
-    text-align: right;
-    font-weight: bold;
-    color: red;
+  text-align: right;
+  font-weight: bold;
+  color: red;
 }
 
 #options {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 #options li {
-    padding: 10px;
-    margin: 8px 0;
-    background: #eee;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px;
+  margin: 8px 0;
+  background: #eee;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 #options li:hover {
-    background: #dcdcdc;
+  background: #dcdcdc;
 }
 
 .buttons {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
 }
 
 button {
-    padding: 8px 15px;
-    cursor: pointer;
+  padding: 8px 15px;
+  cursor: pointer;
 }
 
 #options li {
@@ -70,4 +64,19 @@ button {
 #options li.selected {
   background: #4caf50;
   color: white;
+}
+
+/* Desktop: centered card */
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quiz-container {
+    width: 450px;
+    min-height: auto; /* 🔥 THIS LINE IS CRITICAL */
+    border-radius: 10px;
+  }
 }

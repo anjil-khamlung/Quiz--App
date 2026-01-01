@@ -66,7 +66,7 @@ button {
   color: white;
 }
 
-/* Desktop: centered card */
+/* For Desktop */
 @media (min-width: 768px) {
   body {
     display: flex;
@@ -76,7 +76,7 @@ button {
 
   .quiz-container {
     width: 450px;
-    min-height: auto; /* 🔥 THIS LINE IS CRITICAL */
+    min-height: auto; 
     border-radius: 10px;
   }
 }

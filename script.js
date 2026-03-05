@@ -1,4 +1,4 @@
-// DOM elements
+
 const questionEl = document.getElementById("question");
 const optionsEl = document.getElementById("options");
 const timerEl = document.getElementById("timer");
@@ -94,7 +94,7 @@ function loadQuestion() {
 
   q.options.forEach((option, index) => {
     const li = document.createElement("li");
-    li.innerText = option;
+    li.innerText = `${index + 1}) ${option}`;
 
     // restore selected answer
     if (selectedAnswers[currentQuestion] === index) {

@@ -7,7 +7,7 @@
 
 body {
   min-height: 100vh;
-  background: #f4f4f4;
+  background: white;
 }
 
 .quiz-container {
@@ -37,13 +37,13 @@ h1 {
 #options li {
   padding: 10px;
   margin: 8px 0;
-  background: #eee;
+  background: white;
   border-radius: 5px;
   cursor: pointer;
 }
 
 #options li:hover {
-  background: #dcdcdc;
+  background: rgb(223, 212, 212);
 }
 
 .buttons {
